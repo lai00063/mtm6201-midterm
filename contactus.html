@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Project</title>
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c0c1d53b1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="topnav">
+      <img src="images/logo.png" alt="Sweet Oven logo" class="logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- use the id to link up -->
+        <li><a href="#Products">Products</a></li>
+        <li><a href="#Custom">Custom Order</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>Contact Us Now</h2>
+        <div class="contactus-image"> 
+          <img srcset="images/contactus320.jpg 320w,
+          images/contactus480.jpg 480w,
+          images/contactus720.jpg 720w,
+          images/contactus960.jpg 960w"
+           alt="contactus">
+        </div>
+    </section>
+
+    <section class="Message" id="Message">
+      <h2>Send Us A Message</h2>
+      <form action="about.html" method="get">
+        <div>
+          <label for="name">Full Name</label><br>
+          <input id="name" type="text" name="name">
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" type="text" name="email">
+        </div>
+        <div>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="6" cols="130"></textarea>
+        </div>
+        <input class="send" type="button" value="Send">
+      </form>
+    </section>
+
+    <section class="location">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2803.9503404460643!2d-75.7587885!3d45.3498147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680552244437!5m2!1sen!2sca" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    <section class="houseofoperation">
+      <h2>Hours of Operation</h2>
+      <table>
+        <tr>
+          <th>Days</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday - Friday</td>
+          <td>9am-6pm</td>
+        </tr>
+        <tr>
+          <td>Saturday - Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </section>
+
+   
+
+    <footer>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>      
+      <p>&copy; 2023 Sweet Oven. All images are taken from <a href="#">Unsplash</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    color: #525151;/* set a text color for all page */
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: auto;
+  }
+  
+  .topnav ul {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    text-align: center; /* Center the navigation items horizontally */
+  }
+  
+  .topnav li {
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  .topnav li a {
+    color: rgb(105, 105, 105);
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 19px;
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+  
+  .topnav li a:hover {
+    background-color: #616161;/* Background color when hover */
+    color: #ffffff;
+  }
+  
+
+  
+  .hero-banner {
+    background-image: url("../images/blueberry cheesecake.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px ;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .hero-content {
+    position: absolute;/* to make it bottom */
+    top: 40%;/* to make some space bottom */
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    margin-left: 10%;/* to make some space left */
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(112, 111, 111, 0.5);/* Add text shadow to able to see the world when it in small scren*/
+  }
+  
+
+  .animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+    --animate-delay: 0.5s;
+  }
+  
+  .learnmore {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #525151;
+    border-radius: 4px;
+  }
+  .learnmore:hover {
+    background-color: #616161; /* Color when hover */
+    color: #ffffff; /* Text color when hover */
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+  
+  .Products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 125px;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .Products section {
+    flex: 1 1 300px;
+  }
+  
+  .Products section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Products section h2,
+  .Products section a {
+    color: #525151;
+    text-align: center;
+    border: 1px solid #616161;
+    padding: 5px;
+  }
+  
+  .Customorder {
+    color: #525151;
+    margin: 8%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'item1 item2' 'item3 item2';
+    gap: 20px;
+  }
+  
+  .item1 {
+    grid-area: item1;
+  }
+  
+  .item2 {
+    grid-area: item2;
+  }
+  
+  .item3 {
+    grid-area: item3;
+  }
+  
+  .customparagraph {
+    background-color: #e2f8ea;
+    color: #525151;
+    padding: 10px;
+    width: 95%;
+    height: 90%;
+    gap: 4rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .aboutus {
+    display: grid;
+    grid-template-areas: 'aboutusp-image aboutusp-content';
+    grid-gap: 20px;
+    color: #525151;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .aboutush {
+    margin-left: 10%;
+  }
+  
+  .aboutusp-image {
+    grid-area: aboutusp-image;
+    background-color: transparent;
+  }
+  
+  .aboutusp {
+    grid-area: aboutusp-content;
+    background-color: #dbf2fb;
+    padding: 20px;
+    padding-top: 10%;
+  }
+  
+  .Delivery {
+    margin-top: 2.2%;
+    display: grid;
+    grid-template-areas: 'deliveryp delivery-image';
+    grid-gap: 20px;
+    color: #525151;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .deliveryp {
+    grid-area: deliveryp;
+    background-color: #e2f8ea;
+    padding: 20px;
+    padding-top: 15%;
+  }
+  
+  .delivery-image {
+    grid-area: delivery-image;
+  }
+  
+  .delivery-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .contactus-img {
+    width: 50px;
+    height:auto;
+  }
+  
+
+  .Message{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    
+  }
+  table {
+    width: 100%;
+    background-color: #dbf2fb;; /* Set the background color */
+    
+  }
+  
+  table th,
+  table td {
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+  
+  .houseofoperation,
+  .location {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  footer {
+    color: #ffffff;
+    background-color: #d0add9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  .contact {
+    color: #525151;
+  }
+
+  .social-icons i {
+    margin-right: 20px; /* Adjust the space */
+    font-size: 30px;
+  }
+
+  .social-icons i:hover {
+    color: #707070; /* Color when hovering */
+    transition-property: all;
+    transition-duration: 0.3s;
+  }
+  
+  @media only screen and (max-width: 767px) {
+   
+    .topnav li {
+        display: block; /* Change to one column */
+        margin-bottom: 10px; 
+      }
+    }
+
+  
+    .hero-content {
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 80%;
+      transform: none;
+    }
+  
+    .learnmore {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+
+ 
