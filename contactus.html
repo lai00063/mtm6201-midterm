@@ -31,11 +31,11 @@
           images/contactus480.jpg 480w,
           images/contactus720.jpg 720w,
           images/contactus960.jpg 960w"
-           alt="contactus">
+           alt="contactus" itemprop="image">
         </div>
     </section>
 <!-- make a form -->
-    <section class="Message" id="Message">
+    <section class="Message" id="Message"  role="contentinfo">
       <h2>Send Us A Message</h2>
       <form action="about.html" method="get">
         <div>
@@ -54,12 +54,19 @@
       </form>
     </section>
 <!-- add a google map location -->
-    <section class="location">
-        <h2>Location</h2>
+    <section class="location"  itemscope itemtype="https://schema.org/PostalAddress">
+             <h2 id="Location">Location</h2>
+        <p>
+          <span itemprop="name">Sweet Oven Bakery,</span>
+          <span itemprop="streetAddress"> 1385 Woodroffe Avenue,</span>
+          <span itemprop="addressLocality">Ottawa,</span>
+          <span itemprop="addressRegion">On,</span>
+          <span itemprop="postalCode"> K2G 1V8 </span>
+        </p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2803.9503404460643!2d-75.7587885!3d45.3498147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680552244437!5m2!1sen!2sca" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
 
-    <section class="houseofoperation">
+    <section class="houseofoperation"  role="contentinfo">
       <h2>Hours of Operation</h2>
       <table>
         <tr>
