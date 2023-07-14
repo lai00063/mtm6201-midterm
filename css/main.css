@@ -72,10 +72,10 @@
   
   .hero-content {
     position: absolute;/* to make it bottom */
-    top: 40%;/* to make some space bottom */
+    top: 50%;/* to make some space bottom */
     transform: translate(-50%, -50%);
     color: #ffffff;
-    margin-left: 10%;/* to make some space left */
+    margin-left: 20%;/* to make some space left */
     font-size: 20px;
     text-shadow: 2px 2px 4px rgba(112, 111, 111, 0.5);/* Add text shadow to able to see the world when it in small scren*/
   }
@@ -173,40 +173,34 @@
     width: 100%;
     height: auto;
   }
-  
   .aboutus {
     display: grid;
-    grid-template-areas: 'aboutusp-image aboutusp-content';
-    grid-gap: 20px;
+    grid-template-areas: 'aboutusp-image aboutusp';
+    grid-gap: 30px;
     color: #525151;
     margin-left: 10%;
     margin-right: 10%;
   }
   
-  .aboutush {
-    margin-left: 10%;
-  }
-  
-  .aboutusp-image {
+  .aboutus-image {
     grid-area: aboutusp-image;
-    background-color: transparent;
   }
   
   .aboutusp {
-    grid-area: aboutusp-content;
+    grid-area: aboutusp;
     background-color: #dbf2fb;
     padding: 20px;
     padding-top: 10%;
   }
   
   .Delivery {
-    margin-top: 2.2%;
     display: grid;
     grid-template-areas: 'deliveryp delivery-image';
-    grid-gap: 20px;
+    grid-gap: 30px;
     color: #525151;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 2%;
   }
   
   .deliveryp {
@@ -220,10 +214,6 @@
     grid-area: delivery-image;
   }
   
-  .delivery-image img {
-    width: 100%;
-    height: auto;
-  }
   
   .contact {
     margin-left: 10%;
@@ -240,11 +230,13 @@
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    
+    background-color: #e2f8ea;
+  }
+  .houseofoperation{
+    background-color: #dbf2fb;
   }
   table {
     width: 100%;
-    background-color: #dbf2fb;; /* Set the background color */
     
   }
   
@@ -290,20 +282,75 @@
         display: block; /* Change to one column */
         margin-bottom: 10px; 
       }
-    }
+    
+      .hero-content {
+        position: absolute;/* to make it bottom */
+        top: 30%;/* to make some space bottom */
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        margin-left: 40%;/* to make some space left */
+        font-size: 20px;
+        text-shadow: 2px 2px 4px rgba(112, 111, 111, 0.5);/* Add text shadow to able to see the world when it in small scren*/
+      }
+        
+      .Customorder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10% auto;
+      }
+      
+      .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+      
+      .item1,
+      .item2,
+      .item3 {
+        margin-top: 10px;
+      }
+      
+      .item2 {
+        order: -1; /*  move it to the top */
+      }
+    
+      .aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #525151;
+        margin: 10% auto;
+      }
+      
+      .aboutusp {
+        background-color: #dbf2fb;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      .Delivery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #525151;
+        margin: 10% auto;
 
-  
-    .hero-content {
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      width: 80%;
-      transform: none;
-    }
-  
-    .learnmore {
-      font-size: 16px;
-      padding: 8px 16px;
-    }
-
+      }
+      .deliveryp {
+        background-color: #e2f8ea;
+        padding: 20px;
+        margin-top: 30px;
+      }
+      
+      .delivery-image {
+        text-align: center;
+        margin-top: 30px;
+      }
+   
+  }
  

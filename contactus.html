@@ -23,36 +23,24 @@
     </nav>
 
     <section class="contact" id="contact">
-      <div class="contact-container">
-        <h2>Contact Us Now</h2>
-        <div class="contactus-image"> 
+        <div class="contact-container">
+          <h2>Contact Us Now</h2>
+          <div class="contactus-image">
             <!-- image optimized for web use -->
-          <img srcset="images/contactus320.jpg 320w,
-          images/contactus480.jpg 480w,
-          images/contactus720.jpg 720w,
-          images/contactus960.jpg 960w"
-           alt="contactus" itemprop="image">
+            <img src="images/contactus320.jpg"
+                 srcset="images/contactus320.jpg 320w,
+                         images/contactus480.jpg 480w,
+                         images/contactus720.jpg 720w,
+                         images/contactus960.jpg 960w"
+                 sizes="(max-width: 320px) 320px,
+                        (max-width: 480px) 480px,
+                        (max-width: 720px) 720px,
+                        (max-width: 960px) 960px"
+                 alt="contactus">
+          </div>
         </div>
-    </section>
-<!-- make a form -->
-    <section class="Message" id="Message"  role="contentinfo">
-      <h2>Send Us A Message</h2>
-      <form action="about.html" method="get">
-        <div>
-          <label for="name">Full Name</label><br>
-          <input id="name" type="text" name="name">
-        </div>
-        <div>
-          <label for="email">Email</label><br>
-          <input id="email" type="text" name="email">
-        </div>
-        <div>
-          <label for="message">Message</label><br>
-          <textarea id="message" name="message" rows="6" cols="130"></textarea>
-        </div>
-        <input class="send" type="button" value="Send">
-      </form>
-    </section>
+      </section>
+      
 <!-- add a google map location -->
     <section class="location"  itemscope itemtype="https://schema.org/PostalAddress">
              <h2 id="Location">Location</h2>
@@ -83,6 +71,27 @@
         </tr>
       </table>
     </section>
+
+
+          <!-- make a form -->
+          <section class="Message" id="Message"  role="contentinfo">
+            <h2>Send Us A Message</h2>
+            <form action="about.html" method="get">
+              <div>
+                <label for="name">Full Name</label><br>
+                <input id="name" type="text" name="name">
+              </div>
+              <div>
+                <label for="email">Email</label><br>
+                <input id="email" type="text" name="email">
+              </div>
+              <div>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" cols="130"></textarea>
+              </div>
+              <input class="send" type="button" value="Send">
+            </form>
+          </section>
 
    
 <!-- use fontawesome web to add social icons -->
